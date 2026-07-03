@@ -5,8 +5,15 @@ export default function (eleventyConfig) {
   // Copy static assets straight through to the output folder.
   eleventyConfig.addPassthroughCopy({ "src/assets": "assets" });
   eleventyConfig.addPassthroughCopy("src/CNAME");
-  eleventyConfig.addPassthroughCopy("src/favicon.svg");
   eleventyConfig.addPassthroughCopy("src/.nojekyll");
+  eleventyConfig.addPassthroughCopy("src/favicon.ico");
+  eleventyConfig.addPassthroughCopy("src/favicon-16.png");
+  eleventyConfig.addPassthroughCopy("src/favicon-32.png");
+  eleventyConfig.addPassthroughCopy("src/favicon-48.png");
+  eleventyConfig.addPassthroughCopy("src/apple-touch-icon.png");
+  eleventyConfig.addPassthroughCopy("src/icon-192.png");
+  eleventyConfig.addPassthroughCopy("src/icon-512.png");
+  eleventyConfig.addPassthroughCopy("src/site.webmanifest");
 
   // Rebuild when assets change.
   eleventyConfig.addWatchTarget("src/assets/");
