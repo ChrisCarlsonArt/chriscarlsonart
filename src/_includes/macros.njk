@@ -1,0 +1,19 @@
+{% macro piece(item, classes="", eager=false) %}
+<div class="piece {{ classes }}" role="button" tabindex="0"
+     data-lightbox
+     data-full="{{ item.image }}"
+     data-alt="{{ item.alt }}"
+     data-caption="<b>{{ item.title }}</b>{% if item.dimensions %} &middot; {{ item.dimensions }}{% endif %}{% if item.location %} &middot; {{ item.location }}{% endif %}"
+     aria-label="View {{ item.title }}{% if item.location %}, {{ item.location }}{% endif %}">
+  {%- set d = imageDims[item.image] -%}
+  <img src="{{ item.image }}" alt="{{ item.alt }}" loading="{{ "eager" if eager else "lazy" }}" decoding="async"{% if d %} width="{{ d.width }}" height="{{ d.height }}"{% endif %}>
+  <span class="piece-meta">
+    <span class="piece-title">{{ item.title }}</span>
+    <span class="piece-tags">
+      {% if item.dimensions %}<span class="dim">{{ item.dimensions }}</span>{% endif %}
+      {% if item.location %}<span>{{ item.location }}</span>{% endif %}
+      {% if item.client %}<span>{{ item.client }}</span>{% endif %}
+    </span>
+  </span>
+</div>
+{% endmacro %}

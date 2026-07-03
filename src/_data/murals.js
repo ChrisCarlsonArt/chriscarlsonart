@@ -1,0 +1,77 @@
+// 3D mural portfolio. Add a new piece by copying a block and dropping the
+// image into src/assets/img/murals/. `featured: true` surfaces it on the homepage.
+export default [
+  {
+    title: "Black Mamba: Kobe Bryant Tribute",
+    image: "/assets/img/murals/black-mamba.jpg",
+    alt: "Black Mamba Kobe Bryant tribute 3D mural, a 20ft x 40ft anamorphic wall painting by Chris Carlson at Venice Beach, California",
+    location: "Venice Beach, CA",
+    dimensions: "20ft x 40ft",
+    featured: true,
+  },
+  {
+    title: "Let the Light In",
+    image: "/assets/img/murals/let-the-light-in.webp",
+    alt: "Let the Light In 3D mural, a 20ft x 20ft illusion wall painting by Chris Carlson in Boulder, Colorado",
+    location: "Boulder, CO",
+    dimensions: "20ft x 20ft",
+    featured: true,
+  },
+  {
+    title: "Giant Ape",
+    image: "/assets/img/murals/giant-ape.webp",
+    alt: "Giant ape 3D mural illusion by Chris Carlson, a museum wall installation in Denver, Colorado",
+    location: "Denver, CO",
+    client: "Museum installation",
+    featured: true,
+  },
+  {
+    title: "Car Crash Through the Wall",
+    image: "/assets/img/murals/car-crash.jpg",
+    alt: "3D mural of a car crashing through a wall, an anamorphic illusion painting by Chris Carlson in San Francisco, California",
+    location: "San Francisco, CA",
+    featured: true,
+  },
+  {
+    title: "Interactive Jeep Mural",
+    image: "/assets/img/murals/jeep-dealership.webp",
+    alt: "Interactive 3D Jeep mural painting by Chris Carlson for a dealership in Chicago, Illinois",
+    location: "Chicago, IL",
+    client: "Jeep dealership",
+  },
+  {
+    title: "Lord of the Rings, Comic Con",
+    image: "/assets/img/murals/lord-of-the-rings.webp",
+    alt: "Lord of the Rings 3D mural created by Chris Carlson for Comic Con in Washington, D.C.",
+    location: "Washington, D.C.",
+    client: "Comic Con",
+  },
+  {
+    title: "Zoo Animals Event Mural",
+    image: "/assets/img/murals/zoo-animals.webp",
+    alt: "Interactive zoo animals 3D mural by Chris Carlson for a corporate event in Chicago, Illinois",
+    location: "Chicago, IL",
+    client: "Jewel-Osco",
+  },
+  {
+    title: "Yeti",
+    image: "/assets/img/murals/yeti.webp",
+    alt: "Yeti 3D mural illusion by Chris Carlson, a museum installation in Minneapolis, Minnesota",
+    location: "Minneapolis, MN",
+    client: "Museum installation",
+  },
+  {
+    title: "Dog Mouth",
+    image: "/assets/img/murals/dog-mouth.webp",
+    alt: "Giant dog mouth 3D mural illusion by Chris Carlson, a museum installation in Rutherford, New Jersey",
+    location: "Rutherford, NJ",
+    client: "Museum installation",
+  },
+  {
+    title: "Cyborg",
+    image: "/assets/img/murals/cyborg.webp",
+    alt: "Cyborg 3D mural illusion by Chris Carlson, a museum installation in Denver, Colorado",
+    location: "Denver, CO",
+    client: "Museum installation",
+  },
+];

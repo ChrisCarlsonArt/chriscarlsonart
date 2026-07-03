@@ -1,0 +1,50 @@
+---
+layout: layouts/base.njk
+title: "3D Murals and Interactive Mural Art"
+description: "3D murals and anamorphic wall paintings by Chris Carlson, a 3D mural artist for hire creating permanent illusions for museums, dealerships, events, and brands. Explore the mural art portfolio."
+permalink: /3d-murals/
+ogImage: /assets/img/murals/black-mamba.jpg
+---
+{% from "macros.njk" import piece with context %}
+
+<section class="section">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow">Portfolio</p>
+      <h1 class="display">3D Murals</h1>
+      <p class="lead">A 3D mural is a large-scale wall (or wall-and-floor) painting that uses anamorphosis to create the illusion of real depth on a flat surface. As a 3D mural artist, Chris Carlson builds immersive, photo-ready installations for museums, brands, dealerships, and events. Tap any image to view it full screen.</p>
+    </div>
+    <div class="gallery reveal">
+      {% for item in murals %}
+        {{ piece(item, "", loop.index0 < 3) }}
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section section--concrete">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow">The craft</p>
+      <h2 class="h2">How 3D murals work</h2>
+    </div>
+    <div class="prose reveal" style="max-width:46rem">
+      <p>A 3D mural is a large-scale painting created directly on walls, floors, or movable materials like vinyl. Like 3D chalk art, it relies on anamorphosis: a form of perspective that lets an artist create the illusion of real depth on a flat surface.</p>
+      <p>The most immersive 3D murals combine the wall and the floor, so a scene appears to open into the room or drop away beneath your feet. Because each piece is designed around a single viewing point, it turns a flat surface into a space people can seemingly step into, which makes it ideal for interactive photos.</p>
+      <p>Murals are usually painted in durable materials, so they last far longer than temporary chalk. That permanence suits museums, dealerships, offices, and brand spaces that want a lasting attraction, while movable vinyl panels make a mural portable for traveling installations and events.</p>
+
+      <h2 class="h3" style="margin-top:2.75rem">A lasting form of anamorphic art</h2>
+      <p>Anamorphic illusions have been used by artists since the Renaissance, and the modern street and mural versions grew out of that same tradition of bending perspective to fool the eye. I have spent more than 13 years creating 3D murals for clients across the country, from museum installations to corporate events.</p>
+      <p>Curious how these illusions come together? See the ground-based work on my <a href="/3d-chalk-art/">3D chalk art</a> page, watch a few <a href="/3d-chalk-art-videos/">time-lapse videos</a>, or read more about <a href="/blog/what-makes-a-great-3d-mural/">what makes a great 3D mural</a>.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section section--ink cta-band">
+  <div class="container">
+    <p class="eyebrow">Commission a 3D mural artist</p>
+    <h2 class="h2">Have a wall in mind?</h2>
+    <p class="lead">Interactive murals are made to be walked up to and photographed. I'm available for mural commissions worldwide. Let's design one for your space.</p>
+    <a href="/contact/" class="btn btn--primary">Request a quote <span class="arrow">&rarr;</span></a>
+  </div>
+</section>

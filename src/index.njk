@@ -1,0 +1,115 @@
+---
+layout: layouts/base.njk
+title: ""
+description: "Chris Carlson is a 3D chalk artist and 3D mural artist in Denver, Colorado. 13+ years creating large-scale 3D illusions for Disney, Ferrari, and museums. Available for hire worldwide."
+permalink: /
+---
+{% from "macros.njk" import piece with context %}
+
+<section class="hero">
+  <div class="hero-media">
+    <img src="/assets/img/site/hero-shark.webp" alt="Chris Carlson standing inside a giant 3D chalk art shark illusion painted on the pavement" fetchpriority="high">
+  </div>
+  <div class="container">
+    <div class="hero-inner">
+      <p class="eyebrow">Denver, CO &middot; Available worldwide</p>
+      <h1 class="display">Flat ground.<br>Impossible <span class="chalk">depth</span>.<span class="visually-hidden"> 3D chalk art and 3D murals by Chris Carlson, a 3D chalk artist in Denver, Colorado.</span></h1>
+      <p class="hero-sub">I'm Chris Carlson, a 3D chalk artist and 3D mural painter. I create large-scale anamorphic illusions: artwork that looks flat until you stand on the correct viewing point, then appears to lift off the ground.</p>
+      <div class="hero-actions">
+        <a href="/3d-chalk-art/" class="btn btn--primary">See the work <span class="arrow">&rarr;</span></a>
+        <a href="/contact/" class="btn btn--ghost">Start a project</a>
+      </div>
+    </div>
+  </div>
+  <div class="hero-scale" aria-hidden="true"><span class="tick"></span> up to 24 &times; 40 ft</div>
+</section>
+
+<section class="cred">
+  <div class="container cred-inner">
+    <p class="cred-stat"><b>13+ years</b> &middot; large-scale work across the U.S. &amp; Mexico &middot; featured in illusion museums</p>
+    <div class="cred-clients">
+      <button type="button" class="cred-link" data-lightbox data-full="/assets/img/chalk/toy-story.jpg" data-alt="Toy Story 3D chalk art by Chris Carlson at Epcot, Walt Disney World" data-caption="<b>Toy Story</b> &middot; 10ft x 22ft &middot; Epcot, Orlando, FL">Disney</button>
+      <button type="button" class="cred-link" data-lightbox data-full="/assets/img/chalk/ferrari-challenge.webp" data-alt="Ferrari Challenge 3D chalk art by Chris Carlson in Austin, Texas" data-caption="<b>Ferrari Challenge</b> &middot; 24ft x 40ft &middot; Austin, TX">Ferrari</button>
+      <button type="button" class="cred-link" data-lightbox data-full="/assets/img/murals/giant-ape.webp" data-alt="Giant ape 3D mural by Chris Carlson, a museum installation in Denver" data-caption="<b>Giant Ape</b> &middot; museum installation &middot; Denver, CO">Museum of Illusions</button>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-head section-head--row reveal">
+      <div>
+        <p class="eyebrow">Selected work</p>
+        <h2 class="h2">Recent 3D chalk art and murals</h2>
+      </div>
+      <a href="/3d-chalk-art/" class="btn btn--outline">View all chalk art <span class="arrow">&rarr;</span></a>
+    </div>
+
+    <div class="featured-grid reveal">
+      {{ piece(chalkArt[0], "fg-tall") }}
+      {{ piece(chalkArt[1], "fg-wide") }}
+      {{ piece(murals[0], "fg-sq") }}
+      {{ piece(chalkArt[3], "fg-sq") }}
+      {{ piece(chalkArt[2], "fg-wide") }}
+    </div>
+  </div>
+</section>
+
+<section class="section section--concrete">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow">Two ways to work together</p>
+      <h2 class="h2">Chalk on the ground, or paint on the wall</h2>
+    </div>
+    <div class="disciplines">
+      <a href="/3d-chalk-art/" class="discipline reveal">
+        <img src="/assets/img/chalk/dolphin-ride.webp" alt="3D chalk art of a dolphin leaping out of the pavement" loading="lazy">
+        <div class="discipline-body">
+          <h3 class="h3">3D Chalk Art</h3>
+          <p>Anamorphic street paintings created on-site for festivals, events, and activations. Temporary by nature, made to be photographed.</p>
+          <span class="discipline-link">Explore chalk art <span class="arrow">&rarr;</span></span>
+        </div>
+      </a>
+      <a href="/3d-murals/" class="discipline reveal">
+        <img src="/assets/img/murals/giant-ape.webp" alt="Giant ape 3D mural illusion painted on a museum wall" loading="lazy">
+        <div class="discipline-body">
+          <h3 class="h3">3D Murals</h3>
+          <p>Permanent wall-and-floor illusions for museums, dealerships, events, and brand activations.</p>
+          <span class="discipline-link">Explore murals <span class="arrow">&rarr;</span></span>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow">Process</p>
+      <h2 class="h2">How a commission comes together</h2>
+    </div>
+    <div class="steps reveal">
+      <div class="step">
+        <h3>Share the brief</h3>
+        <p>Tell me about your space, event, and what you have in mind. I'll come back with a quote.</p>
+      </div>
+      <div class="step">
+        <h3>I create the artwork on site or in the studio</h3>
+        <p>I paint the illusion on location, or on canvas in the studio to install on site, calibrated to a single viewing point so it reads as three-dimensional in photos.</p>
+      </div>
+      <div class="step">
+        <h3>The finished piece</h3>
+        <p>A custom work made for your space and built to be photographed, something people genuinely enjoy and share.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--ink cta-band">
+  <div class="container">
+    <p class="eyebrow">Get in touch</p>
+    <h2 class="h2">Have a wall, a floor, or an event in mind?</h2>
+    <p class="lead">I'm based in Denver and available for hire worldwide. Tell me about your project and I'll get back to you with a quote.</p>
+    <a href="/contact/" class="btn btn--primary">Start a project <span class="arrow">&rarr;</span></a>
+  </div>
+</section>

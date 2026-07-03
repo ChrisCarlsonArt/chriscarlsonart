@@ -1,0 +1,40 @@
+---
+layout: layouts/base.njk
+title: "About Chris Carlson, 3D Chalk Artist"
+description: "Meet Chris Carlson, a Denver-based 3D chalk artist and 3D mural artist with 13+ years of experience and work featured in Fortune 500 campaigns and 3D illusion museums across the U.S. and Mexico."
+permalink: /about/
+ogImage: /assets/img/site/chris-carlson-portrait.jpg
+---
+
+<section class="section">
+  <div class="container">
+    <div class="section-head reveal" style="margin-bottom:clamp(1.5rem,3vw,2.5rem)">
+      <p class="eyebrow">About</p>
+      <h1 class="display">The artist behind<br>the illusion</h1>
+    </div>
+    <div class="about-grid">
+      <div class="about-portrait reveal">
+        {%- set pd = imageDims["/assets/img/site/chris-carlson-portrait.jpg"] %}
+        <img src="/assets/img/site/chris-carlson-portrait.jpg" alt="Portrait of Chris Carlson, 3D chalk artist and 3D mural artist based in Denver, Colorado"{% if pd %} width="{{ pd.width }}" height="{{ pd.height }}"{% endif %}>
+        <span class="annot">Chris Carlson &middot; Denver, CO</span>
+      </div>
+      <div class="prose reveal">
+        <p class="lead">I'm Chris Carlson, a 3D chalk artist and 3D mural artist based in Denver, Colorado. For more than 13 years I've created large-scale illusions on pavement and walls around the world: artwork that looks flat until you stand on the correct viewing point.</p>
+        <p>My work uses anamorphic perspective, a centuries-old technique for faking depth on a flat surface, to build scenes that look impossibly three-dimensional from the right vantage point. I've created artwork for thousands of people, with pieces featured in Fortune 500 advertising campaigns and 3D illusion museums across the United States and Mexico.</p>
+        <p>My style pulls from the things I love most: video games, cartoons, comic books, and my pets. That mix keeps the work playful and approachable, even at 40 feet wide.</p>
+
+        <h2 class="h3">Selected clients &amp; projects</h2>
+        <p>Walt Disney World (Toy Story and The Emperor's New Groove at Epcot), a 20&times;40 ft Kobe Bryant "Black Mamba" tribute at Venice Beach, a 24&times;40 ft Ferrari Challenge activation in Austin, and installations for Museum of Illusions locations from Minneapolis to New Jersey.</p>
+
+        <div class="facts">
+          <div class="fact"><div class="n">13+</div><div class="l">Years experience</div></div>
+          <div class="fact"><div class="n">40 ft</div><div class="l">Largest pieces</div></div>
+          <div class="fact"><div class="n">Worldwide</div><div class="l">Available for hire</div></div>
+          <div class="fact"><div class="n">Denver</div><div class="l">Based in Colorado</div></div>
+        </div>
+
+        <p style="margin-top:2rem"><a href="/contact/" class="btn btn--primary">Work with me <span class="arrow">&rarr;</span></a></p>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,19 @@
+<header class="site-header" data-header>
+  <div class="container header-inner">
+    <a class="brand" href="/">
+      <span class="brand-name">Chris Carlson</span>
+      <span class="brand-tag">3D Chalk &amp; Mural Art</span>
+    </a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" data-nav-toggle>
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="site-nav" aria-label="Primary" data-nav>
+      <a href="/3d-chalk-art/"{% if page.url == "/3d-chalk-art/" %} aria-current="page"{% endif %}>3D Chalk Art</a>
+      <a href="/3d-murals/"{% if page.url == "/3d-murals/" %} aria-current="page"{% endif %}>3D Murals</a>
+      <a href="/3d-chalk-art-videos/"{% if page.url == "/3d-chalk-art-videos/" %} aria-current="page"{% endif %}>Videos</a>
+      <a href="/about/"{% if page.url == "/about/" %} aria-current="page"{% endif %}>About</a>
+      <a href="/blog/"{% if "/blog/" in page.url %} aria-current="page"{% endif %}>Blog</a>
+      <a class="nav-cta" href="/contact/"{% if page.url == "/contact/" %} aria-current="page"{% endif %}>Contact</a>
+    </nav>
+  </div>
+</header>

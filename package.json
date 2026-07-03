@@ -1,0 +1,20 @@
+{
+  "name": "chriscarlsonart",
+  "version": "1.0.0",
+  "description": "Portfolio website for Chris Carlson, 3D chalk artist and 3D mural artist.",
+  "type": "module",
+  "scripts": {
+    "dev": "node scripts/optimize-images.mjs && eleventy --serve",
+    "start": "node scripts/optimize-images.mjs && eleventy --serve",
+    "build": "node scripts/optimize-images.mjs && eleventy",
+    "clean": "node -e \"import('node:fs').then(fs=>fs.rmSync('_site',{recursive:true,force:true}))\""
+  },
+  "license": "UNLICENSED",
+  "private": true,
+  "devDependencies": {
+    "@11ty/eleventy": "^3.0.0",
+    "clean-css": "^5.3.3",
+    "image-size": "^2.0.2",
+    "sharp": "^0.35.3"
+  }
+}

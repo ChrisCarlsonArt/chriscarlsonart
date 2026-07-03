@@ -1,0 +1,51 @@
+---
+layout: layouts/base.njk
+title: "3D Chalk Art and Street Paintings"
+description: "3D chalk art and anamorphic street paintings by Chris Carlson, a 3D chalk artist for hire with 13+ years creating large-scale illusions for festivals, brands, and events worldwide."
+permalink: /3d-chalk-art/
+ogImage: /assets/img/chalk/ferrari-challenge.webp
+---
+{% from "macros.njk" import piece with context %}
+
+<section class="section">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow">Portfolio</p>
+      <h1 class="display">3D Chalk Art</h1>
+      <p class="lead">Anamorphic street paintings drawn in chalk and pastel, built to read as fully three-dimensional from a single camera angle. Each piece below was created live by 3D chalk artist Chris Carlson at festivals, brand activations, and events across the U.S. and beyond. Tap any image to view it full screen.</p>
+    </div>
+    <div class="gallery reveal">
+      {% for item in chalkArt %}
+        {{ piece(item, "", loop.index0 < 3) }}
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section section--concrete">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow">The craft</p>
+      <h2 class="h2">How 3D chalk art works</h2>
+    </div>
+    <div class="prose reveal" style="max-width:46rem">
+      <p>3D chalk art is a form of optical illusion built on anamorphic perspective. The design is deliberately stretched across the ground, growing longer and wider the further it sits from the viewing point. Stand on that one correct spot and the flat drawing snaps into a scene that looks fully three-dimensional.</p>
+      <p>From anywhere else, the distortion shows. Step to the wrong side and the image can look so stretched that it is hard to tell what it is. That is the anamorphic effect at work. These pieces read best from a single viewing point, and usually through a camera: a lens has just one "eye" and no true depth perception, so it strengthens the illusion even further.</p>
+      <p>Most 3D chalk art is drawn directly on the street or sidewalk in soft pastel chalk, though the same illusion can be created in temporary or permanent paint for a longer-lasting piece.</p>
+
+      <h2 class="h3" style="margin-top:2.75rem">A short history of the art form</h2>
+      <p>Anamorphic art has roots in the Renaissance, when painters first worked out how to fake depth on a flat surface. The modern street version is younger: Kurt Wenner is credited with inventing 3D pavement art in 1984, translating those classical perspective techniques into the sidewalk illusions we know today.</p>
+      <p>Artists like Julian Beever, Tracy Lee Stum, and David Zinn carried the form further, and today 3D chalk art is a fixture at street painting festivals across the country. It is the tradition I have worked in for more than 13 years.</p>
+      <p>Want to see a piece come together from the first line to the finished painting? Watch a few <a href="/3d-chalk-art-videos/">time-lapse videos</a>, or read more about <a href="/blog/what-is-3d-chalk-art/">what 3D chalk art is</a>.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section section--ink cta-band">
+  <div class="container">
+    <p class="eyebrow">Book a 3D chalk artist</p>
+    <h2 class="h2">Want a chalk illusion at your next event?</h2>
+    <p class="lead">Festivals, store openings, product launches, and brand activations. I'm available for hire worldwide. Tell me the date and the space.</p>
+    <a href="/contact/" class="btn btn--primary">Request a quote <span class="arrow">&rarr;</span></a>
+  </div>
+</section>

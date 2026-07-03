@@ -1,0 +1,36 @@
+---
+layout: layouts/base.njk
+ogType: article
+---
+<section class="section">
+  <div class="container">
+    <article class="post">
+      <header class="post-header reveal">
+        <p class="eyebrow"><a href="/blog/" style="color:inherit">Blog</a> &middot; <time datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}</time></p>
+        <h1>{{ title }}</h1>
+      </header>
+      <div class="post-body prose reveal">
+        {{ content | safe }}
+      </div>
+      <p style="margin-top:2.6rem">
+        <a href="/contact/" class="btn btn--primary">Discuss a project <span class="arrow">&rarr;</span></a>
+        <a href="/blog/" class="btn btn--outline" style="margin-left:0.6rem">All posts</a>
+      </p>
+    </article>
+  </div>
+</section>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "{{ title }}",
+  "description": "{{ description }}",
+  "datePublished": "{{ page.date | htmlDateString }}",
+  "dateModified": "{{ page.date | htmlDateString }}",
+  "url": "{{ page.url | absoluteUrl(site.url) }}",
+  "mainEntityOfPage": "{{ page.url | absoluteUrl(site.url) }}",
+  "author": { "@id": "{{ site.url }}/#chris-carlson" },
+  "publisher": { "@id": "{{ site.url }}/#business" }
+}
+</script>

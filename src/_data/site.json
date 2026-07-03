@@ -1,0 +1,25 @@
+{
+  "name": "Chris Carlson Art",
+  "title": "Chris Carlson | 3D Chalk Artist & 3D Mural Artist for Hire",
+  "tagline": "Professional 3D chalk artist and 3D mural artist based in Denver, Colorado, available for hire worldwide.",
+  "description": "Chris Carlson is a 3D chalk artist and 3D mural artist in Denver, Colorado, creating large-scale 3D illusions for brands, events, and museums. Available for hire worldwide.",
+  "url": "https://www.chriscarlsonart.com",
+  "domain": "www.chriscarlsonart.com",
+  "author": "Chris Carlson",
+  "jobTitle": "3D Chalk Artist & 3D Mural Artist",
+  "email": "Chris@ChrisCarlsonArt.com",
+  "yearsExperience": "13+",
+  "location": {
+    "city": "Denver",
+    "region": "CO",
+    "regionName": "Colorado",
+    "country": "US"
+  },
+  "ogImage": "/assets/img/site/hero-shark.webp",
+  "social": {
+    "instagram": "https://www.instagram.com/chriscarlsonart/",
+    "facebook": "https://www.facebook.com/ChrisCarlsonChalkArt/",
+    "etsy": "https://www.etsy.com/shop/ChrisCarlsonArt"
+  },
+  "formspreeEndpoint": "https://formspree.io/f/meebrbda"
+}

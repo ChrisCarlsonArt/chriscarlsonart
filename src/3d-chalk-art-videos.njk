@@ -1,0 +1,61 @@
+---
+layout: layouts/base.njk
+title: "3D Chalk Art Videos"
+description: "Time-lapse videos of Chris Carlson creating 3D chalk art, from the first line drawing to the finished painting. Watch the process behind the illusions."
+permalink: /3d-chalk-art-videos/
+ogImage: /assets/img/video/super-mario.jpg
+---
+
+<section class="section">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow">Watch</p>
+      <h1 class="display">3D Chalk Art Videos</h1>
+      <p class="lead">A few time-lapse videos of me making 3D chalk art, from the first line drawing all the way to the finished painting. Tap a video to play it.</p>
+    </div>
+
+    <div class="video-grid reveal">
+      {% for v in videos %}
+      <article class="video-card">
+        <button type="button" class="video-thumb" data-youtube="{{ v.youtube }}" aria-label="Play video: {{ v.title }}">
+          <img src="{{ v.thumb }}" alt="Time-lapse of Chris Carlson creating the {{ v.title }} 3D chalk art" loading="{{ "eager" if loop.first else "lazy" }}" decoding="async" width="1280" height="720">
+          <span class="video-play" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="28" height="28"><path d="M8 5v14l11-7z" fill="currentColor"/></svg>
+          </span>
+        </button>
+        <div class="video-body">
+          <h2 class="video-title">{{ v.title }}</h2>
+          <p>{{ v.description }}</p>
+        </div>
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section section--ink cta-band">
+  <div class="container">
+    <p class="eyebrow">More on YouTube</p>
+    <h2 class="h2">Want to see a piece made for your event?</h2>
+    <p class="lead">Tell me what you have in mind and I'll get back to you with a quote.</p>
+    <a href="/contact/" class="btn btn--primary">Start a project <span class="arrow">&rarr;</span></a>
+  </div>
+</section>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {%- for v in videos %}
+    {
+      "@type": "VideoObject",
+      "name": "{{ v.title }} 3D Chalk Art (Time Lapse)",
+      "description": "{{ v.description }}",
+      "thumbnailUrl": "{{ v.thumb | absoluteUrl(site.url) }}",
+      "contentUrl": "https://www.youtube.com/watch?v={{ v.youtube }}",
+      "embedUrl": "https://www.youtube.com/embed/{{ v.youtube }}"
+    }{% if not loop.last %},{% endif %}
+    {%- endfor %}
+  ]
+}
+</script>

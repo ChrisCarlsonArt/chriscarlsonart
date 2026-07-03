@@ -1,0 +1,28 @@
+---
+layout: layouts/base.njk
+title: "3D Chalk Art Blog"
+description: "Notes on 3D chalk art and mural art from artist Chris Carlson: how anamorphic illusions are made, what they cost, and how to hire a 3D chalk artist or 3D mural artist for your event or brand."
+permalink: /blog/
+---
+
+<section class="section">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow">Blog</p>
+      <h1 class="display">Notes from the pavement</h1>
+      <p class="lead">How 3D chalk art and murals come together, what goes into a commission, and what to know before you hire an artist.</p>
+    </div>
+
+    <div class="post-list reveal">
+      {% for post in collections.posts %}
+      <article class="post-card">
+        <span class="post-date"><time datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time></span>
+        <a href="{{ post.url }}">
+          <h3>{{ post.data.title }}</h3>
+          <p>{{ post.data.description }}</p>
+        </a>
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
