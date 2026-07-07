@@ -2,6 +2,23 @@
 // image into src/assets/img/chalk/. `featured: true` surfaces it on the homepage.
 export default [
   {
+    title: "Hungry Hungry Hippos: Robot Battle",
+    image: "/assets/img/chalk/hungry-hippos-2025.jpg",
+    alt: "Hungry Hungry Hippos robot 3D chalk art, a 15ft x 25ft interactive street painting by Chris Carlson at the 2025 Denver Chalk Art Festival",
+    location: "Denver Chalk Art Festival, Denver, CO",
+    dimensions: "15ft x 25ft",
+    featured: true,
+  },
+  {
+    title: "Elder Dragon",
+    image: "/assets/img/chalk/elder-dragon.jpg",
+    alt: "Elder Dragon 3D chalk art illusion bursting through the pavement, a 15ft x 30ft street painting by Chris Carlson commissioned by Riot Games in Santa Monica, California",
+    location: "Santa Monica, CA",
+    dimensions: "15ft x 30ft",
+    client: "Riot Games",
+    featured: true,
+  },
+  {
     title: "Mech Cat vs. Bird",
     image: "/assets/img/chalk/mech-cat-vs-bird.webp",
     alt: "3D chalk art of a giant mech cat battling a bird, a 10ft x 24ft street painting by Chris Carlson in Denver, Colorado",
