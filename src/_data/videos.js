@@ -41,4 +41,12 @@ export default [
     uploadDate: "2015-09-20",
     duration: "PT1M17S",
   },
+  {
+    title: "Wile E. Coyote on a Curved Wall",
+    youtube: "viqx9oiT8vo",
+    thumb: "/assets/img/video/wile-e-coyote.jpg",
+    description: "I built a custom curved wall and painted Wile E. Coyote and Road Runner across three walls, the floor, and part of the ceiling. About 38 hours of painting.",
+    uploadDate: "2020-01-25",
+    duration: "PT1M10S",
+  },
 ];
