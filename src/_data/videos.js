@@ -53,7 +53,9 @@ export default [
     title: "Spider Queen 3D Mural",
     youtube: "eweyeHjv-S0",
     thumb: "/assets/img/video/spider-queen.jpg",
+    // description is plain text for the VideoObject schema; descriptionHtml is what the card displays
     description: "A giant Spider Queen mural painted together with artist Nate Baranowski, from blank wall to finished illusion.",
+    descriptionHtml: 'A giant Spider Queen mural painted together with artist <a href="https://www.natebaranowski.com" target="_blank" rel="noopener">Nate Baranowski</a>, from blank wall to finished illusion.',
     uploadDate: "2021-10-04",
     duration: "PT1M13S",
   },
