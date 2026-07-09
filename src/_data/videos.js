@@ -33,4 +33,12 @@ export default [
     uploadDate: "2014-04-28",
     duration: "PT54S",
   },
+  {
+    title: "Metroid Prime: Samus",
+    youtube: "zKvmaHQevDk",
+    thumb: "/assets/img/video/samus.jpg",
+    description: "Samus from Metroid Prime, drawn in chalk from first sketch to finished piece. Another entry in the video game series.",
+    uploadDate: "2015-09-20",
+    duration: "PT1M17S",
+  },
 ];
