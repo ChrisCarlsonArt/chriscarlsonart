@@ -49,4 +49,12 @@ export default [
     uploadDate: "2020-01-25",
     duration: "PT1M10S",
   },
+  {
+    title: "Spider Queen 3D Mural",
+    youtube: "eweyeHjv-S0",
+    thumb: "/assets/img/video/spider-queen.jpg",
+    description: "A giant Spider Queen mural painted together with artist Nate Baranowski, from blank wall to finished illusion.",
+    uploadDate: "2021-10-04",
+    duration: "PT1M13S",
+  },
 ];
