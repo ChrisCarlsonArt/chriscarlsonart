@@ -57,4 +57,12 @@ export default [
     uploadDate: "2021-10-04",
     duration: "PT1M13S",
   },
+  {
+    title: "Krang Interactive 3D Mural",
+    youtube: "ooWZREPIF2U",
+    thumb: "/assets/img/video/krang.jpg",
+    description: "Krang from Teenage Mutant Ninja Turtles as an interactive 3D mural, painted so visitors can step into the scene.",
+    uploadDate: "2022-11-21",
+    duration: "PT1M20S",
+  },
 ];
