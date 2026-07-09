@@ -52,6 +52,8 @@ ogImage: /assets/img/video/super-mario.jpg
       "name": "{{ v.title }} 3D Chalk Art (Time Lapse)",
       "description": "{{ v.description }}",
       "thumbnailUrl": "{{ v.thumb | absoluteUrl(site.url) }}",
+      "uploadDate": "{{ v.uploadDate }}",
+      "duration": "{{ v.duration }}",
       "contentUrl": "https://www.youtube.com/watch?v={{ v.youtube }}",
       "embedUrl": "https://www.youtube.com/embed/{{ v.youtube }}"
     }{% if not loop.last %},{% endif %}
