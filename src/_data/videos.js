@@ -6,7 +6,7 @@ export default [
     youtube: "U2juYr2Xjeo",
     thumb: "/assets/img/video/super-mario.jpg",
     description: "My first time-lapse, filmed back in 2012. This 8-bit Mario went viral and helped get my art career off the ground.",
-    uploadDate: "2012-06-24",
+    uploadDate: "2012-06-24T13:13:35-07:00",
     duration: "PT3M54S",
   },
   {
@@ -14,7 +14,7 @@ export default [
     youtube: "ifiCMQgxL70",
     thumb: "/assets/img/video/whac-a-mole.jpg",
     description: "An early garage piece of the arcade classic, with a high score that nods to Denver's mile-high elevation.",
-    uploadDate: "2013-01-28",
+    uploadDate: "2013-01-28T17:37:57-08:00",
     duration: "PT1M52S",
   },
   {
@@ -22,7 +22,7 @@ export default [
     youtube: "ntBHutnGLkg",
     thumb: "/assets/img/video/rocket-league.jpg",
     description: "A chalk drawing inspired by the video game, made in the garage over the winter.",
-    uploadDate: "2016-04-21",
+    uploadDate: "2016-04-21T11:46:30-07:00",
     duration: "PT1M26S",
   },
   {
@@ -30,7 +30,7 @@ export default [
     youtube: "IGSa3S1pSzk",
     thumb: "/assets/img/video/snake.jpg",
     description: "A test drawing on a curved cyclorama wall for the AWE me Artist Series, built from the simple shapes of the classic game.",
-    uploadDate: "2014-04-28",
+    uploadDate: "2014-04-28T09:56:45-07:00",
     duration: "PT54S",
   },
   {
@@ -38,7 +38,7 @@ export default [
     youtube: "zKvmaHQevDk",
     thumb: "/assets/img/video/samus.jpg",
     description: "Samus from Metroid Prime, drawn in chalk from first sketch to finished piece. Another entry in the video game series.",
-    uploadDate: "2015-09-20",
+    uploadDate: "2015-09-20T20:45:10-07:00",
     duration: "PT1M17S",
   },
   {
@@ -46,7 +46,7 @@ export default [
     youtube: "viqx9oiT8vo",
     thumb: "/assets/img/video/wile-e-coyote.jpg",
     description: "I built a custom curved wall and painted Wile E. Coyote and Road Runner across three walls, the floor, and part of the ceiling. About 38 hours of painting.",
-    uploadDate: "2020-01-25",
+    uploadDate: "2020-01-25T11:10:08-08:00",
     duration: "PT1M10S",
   },
   {
@@ -56,7 +56,7 @@ export default [
     // description is plain text for the VideoObject schema; descriptionHtml is what the card displays
     description: "A giant Spider Queen mural painted together with artist Nate Baranowski, from blank wall to finished illusion.",
     descriptionHtml: 'A giant Spider Queen mural painted together with artist <a href="https://www.natebaranowski.com" target="_blank" rel="noopener">Nate Baranowski</a>, from blank wall to finished illusion.',
-    uploadDate: "2021-10-04",
+    uploadDate: "2021-10-04T10:14:52-07:00",
     duration: "PT1M13S",
   },
   {
@@ -64,7 +64,7 @@ export default [
     youtube: "ooWZREPIF2U",
     thumb: "/assets/img/video/krang.jpg",
     description: "Krang from Teenage Mutant Ninja Turtles as an interactive 3D mural, painted so visitors can step into the scene.",
-    uploadDate: "2022-11-21",
+    uploadDate: "2022-11-21T12:44:49-08:00",
     duration: "PT1M20S",
   },
 ];

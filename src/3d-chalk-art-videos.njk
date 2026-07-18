@@ -49,7 +49,7 @@ ogImage: /assets/img/video/super-mario.jpg
     {%- for v in videos %}
     {
       "@type": "VideoObject",
-      "name": "{{ v.title }} 3D Chalk Art (Time Lapse)",
+      "name": "{{ v.title }}{% if "3D" not in v.title %} 3D Chalk Art{% endif %} (Time Lapse)",
       "description": "{{ v.description }}",
       "thumbnailUrl": "{{ v.thumb | absoluteUrl(site.url) }}",
       "uploadDate": "{{ v.uploadDate }}",
