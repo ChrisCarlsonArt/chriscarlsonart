@@ -137,5 +137,9 @@
   </main>
   {% include "partials/footer.njk" %}
   <script src="/assets/js/main.js" defer></script>
+  {%- if site.cloudflareToken %}
+  <!-- Cloudflare Web Analytics: cookie-free, no consent banner needed. -->
+  <script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "{{ site.cloudflareToken }}"}'></script>
+  {%- endif %}
 </body>
 </html>
