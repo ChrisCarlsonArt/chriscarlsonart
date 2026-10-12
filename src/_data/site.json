@@ -22,5 +22,8 @@
     "etsy": "https://www.etsy.com/shop/ChrisCarlsonArt"
   },
   "formspreeEndpoint": "https://formspree.io/f/meebrbda",
-  "cloudflareToken": "2de2009eb7a54a0e82ec874a4b1f179c"
+  "cloudflareToken": "2de2009eb7a54a0e82ec874a4b1f179c",
+  "ga4Id": "G-B6NH9YVGS2",
+  "googleAdsId": "",
+  "googleAdsConversionLabel": ""
 }

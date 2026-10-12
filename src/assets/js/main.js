@@ -75,6 +75,13 @@
         if (res.ok) {
           contactForm.reset();
           status.className = "form-status is-success";
+          // Record the inquiry: a GA4 lead event, plus an Ads conversion if configured.
+          if (window.gtag) {
+            window.gtag("event", "generate_lead");
+            if (window.adsConversionSendTo) {
+              window.gtag("event", "conversion", { send_to: window.adsConversionSendTo });
+            }
+          }
           status.textContent = "Thanks! Your message is on its way. I'll get back to you soon.";
         } else {
           const json = await res.json().catch(() => ({}));
