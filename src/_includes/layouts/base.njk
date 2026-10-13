@@ -131,16 +131,16 @@
 
   {%- if site.ga4Id or site.googleAdsId %}
   <!-- Google tag (gtag.js): GA4 analytics and Google Ads conversion tracking -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.ga4Id if site.ga4Id else site.googleAdsId }}"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.googleAdsId if site.googleAdsId else site.ga4Id }}"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-    {%- if site.ga4Id %}
-    gtag('config', '{{ site.ga4Id }}');
-    {%- endif %}
-    {%- if site.googleAdsId %}
+        {%- if site.googleAdsId %}
     gtag('config', '{{ site.googleAdsId }}');
+    {%- endif %}
+{%- if site.ga4Id %}
+    gtag('config', '{{ site.ga4Id }}');
     {%- endif %}
     {%- if site.googleAdsId and site.googleAdsConversionLabel %}
     // Read by the contact form handler to report an inquiry as an Ads conversion.
